@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23632ACE4E380061AED7 /* AppDelegate.swift */; };
+		04FA23662ACE4E380061AED7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23652ACE4E380061AED7 /* SceneDelegate.swift */; };
+		04FA23682ACE4E380061AED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23672ACE4E380061AED7 /* ViewController.swift */; };
+		04FA236B2ACE4E380061AED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23692ACE4E380061AED7 /* Main.storyboard */; };
+		04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */; };
+		04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */; };
+		6D05CA1B13EEAC5AEB429242 /* Pods_AnimeHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04FA23602ACE4E380061AED7 /* AnimeHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FA23632ACE4E380061AED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04FA23652ACE4E380061AED7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04FA23672ACE4E380061AED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04FA236A2ACE4E380061AED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FA236F2ACE4E3F0061AED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04FA23712ACE4E3F0061AED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847D97C30EEDDF7440987817 /* Pods-AnimeHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeHub.release.xcconfig"; path = "Target Support Files/Pods-AnimeHub/Pods-AnimeHub.release.xcconfig"; sourceTree = "<group>"; };
+		9EE7942C5408492F9D390252 /* Pods-AnimeHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeHub.debug.xcconfig"; path = "Target Support Files/Pods-AnimeHub/Pods-AnimeHub.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FA235D2ACE4E380061AED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D05CA1B13EEAC5AEB429242 /* Pods_AnimeHub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FA23572ACE4E380061AED7 = {
+			isa = PBXGroup;
+			children = (
+				04FA23622ACE4E380061AED7 /* AnimeHub */,
+				04FA23612ACE4E380061AED7 /* Products */,
+				FF37920ED0C8B723244CE95C /* Pods */,
+				ECD7EC4BCE64C3FD30FE3EE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04FA23612ACE4E380061AED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FA23602ACE4E380061AED7 /* AnimeHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FA23622ACE4E380061AED7 /* AnimeHub */ = {
+			isa = PBXGroup;
+			children = (
+				04FA23632ACE4E380061AED7 /* AppDelegate.swift */,
+				04FA23652ACE4E380061AED7 /* SceneDelegate.swift */,
+				04FA23672ACE4E380061AED7 /* ViewController.swift */,
+				04FA23692ACE4E380061AED7 /* Main.storyboard */,
+				04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */,
+				04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */,
+				04FA23712ACE4E3F0061AED7 /* Info.plist */,
+			);
+			path = AnimeHub;
+			sourceTree = "<group>";
+		};
+		ECD7EC4BCE64C3FD30FE3EE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF37920ED0C8B723244CE95C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EE7942C5408492F9D390252 /* Pods-AnimeHub.debug.xcconfig */,
+				847D97C30EEDDF7440987817 /* Pods-AnimeHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FA235F2ACE4E380061AED7 /* AnimeHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FA23742ACE4E3F0061AED7 /* Build configuration list for PBXNativeTarget "AnimeHub" */;
+			buildPhases = (
+				E4917F45978ED767AA44688F /* [CP] Check Pods Manifest.lock */,
+				04FA235C2ACE4E380061AED7 /* Sources */,
+				04FA235D2ACE4E380061AED7 /* Frameworks */,
+				04FA235E2ACE4E380061AED7 /* Resources */,
+				04FA23792ACE51A50061AED7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimeHub;
+			productName = AnimeHub;
+			productReference = 04FA23602ACE4E380061AED7 /* AnimeHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FA23582ACE4E380061AED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					04FA235F2ACE4E380061AED7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 04FA235B2ACE4E380061AED7 /* Build configuration list for PBXProject "AnimeHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FA23572ACE4E380061AED7;
+			productRefGroup = 04FA23612ACE4E380061AED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FA235F2ACE4E380061AED7 /* AnimeHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FA235E2ACE4E380061AED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */,
+				04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */,
+				04FA236B2ACE4E380061AED7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FA23792ACE51A50061AED7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E4917F45978ED767AA44688F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FA235C2ACE4E380061AED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FA23682ACE4E380061AED7 /* ViewController.swift in Sources */,
+				04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */,
+				04FA23662ACE4E380061AED7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04FA23692ACE4E380061AED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FA236A2ACE4E380061AED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FA236F2ACE4E3F0061AED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FA23722ACE4E3F0061AED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FA23732ACE4E3F0061AED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FA23752ACE4E3F0061AED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE7942C5408492F9D390252 /* Pods-AnimeHub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KBCABK7LR;
+				INFOPLIST_FILE = AnimeHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuankieu.AnimeHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FA23762ACE4E3F0061AED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847D97C30EEDDF7440987817 /* Pods-AnimeHub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KBCABK7LR;
+				INFOPLIST_FILE = AnimeHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuankieu.AnimeHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FA235B2ACE4E380061AED7 /* Build configuration list for PBXProject "AnimeHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FA23722ACE4E3F0061AED7 /* Debug */,
+				04FA23732ACE4E3F0061AED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FA23742ACE4E3F0061AED7 /* Build configuration list for PBXNativeTarget "AnimeHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FA23752ACE4E3F0061AED7 /* Debug */,
+				04FA23762ACE4E3F0061AED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FA23582ACE4E380061AED7 /* Project object */;
+}
