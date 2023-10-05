@@ -12,6 +12,18 @@
 		04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */; };
 		04FA238F2ACE67DA0061AED7 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA238E2ACE67DA0061AED7 /* APICaller.swift */; };
 		04FA23A72ACE6B370061AED7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23A62ACE6B370061AED7 /* TabBarViewController.swift */; };
+		04FA23B72ACE97110061AED7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23B52ACE97110061AED7 /* HomeViewController.swift */; };
+		04FA23B82ACE97110061AED7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23B62ACE97110061AED7 /* HomeViewController.xib */; };
+		04FA23BC2ACE97300061AED7 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23BA2ACE97300061AED7 /* FavoriteViewController.swift */; };
+		04FA23BD2ACE97300061AED7 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23BB2ACE97300061AED7 /* FavoriteViewController.xib */; };
+		04FA23C12ACE97620061AED7 /* SeasonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23BF2ACE97620061AED7 /* SeasonalViewController.swift */; };
+		04FA23C22ACE97620061AED7 /* SeasonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23C02ACE97620061AED7 /* SeasonalViewController.xib */; };
+		04FA23C62ACE97780061AED7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23C42ACE97780061AED7 /* SearchViewController.swift */; };
+		04FA23C72ACE97780061AED7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23C52ACE97780061AED7 /* SearchViewController.xib */; };
+		04FA23CC2ACEA8700061AED7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23CB2ACEA8700061AED7 /* swiftgen.yml */; };
+		04FA23D32ACEABB40061AED7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23D22ACEABB40061AED7 /* Localizable.strings */; };
+		04FA23D62ACEAEC80061AED7 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23D52ACEAEC80061AED7 /* Strings+Generated.swift */; };
+		04FA23D92ACEAED20061AED7 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23D82ACEAED20061AED7 /* XCAssets+Generated.swift */; };
 		6D05CA1B13EEAC5AEB429242 /* Pods_AnimeHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +35,18 @@
 		04FA23712ACE4E3F0061AED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FA238E2ACE67DA0061AED7 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		04FA23A62ACE6B370061AED7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		04FA23B52ACE97110061AED7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04FA23B62ACE97110061AED7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		04FA23BA2ACE97300061AED7 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		04FA23BB2ACE97300061AED7 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		04FA23BF2ACE97620061AED7 /* SeasonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalViewController.swift; sourceTree = "<group>"; };
+		04FA23C02ACE97620061AED7 /* SeasonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonalViewController.xib; sourceTree = "<group>"; };
+		04FA23C42ACE97780061AED7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		04FA23C52ACE97780061AED7 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		04FA23CB2ACEA8700061AED7 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		04FA23D22ACEABB40061AED7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		04FA23D52ACEAEC80061AED7 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		04FA23D82ACEAED20061AED7 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D97C30EEDDF7440987817 /* Pods-AnimeHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeHub.release.xcconfig"; path = "Target Support Files/Pods-AnimeHub/Pods-AnimeHub.release.xcconfig"; sourceTree = "<group>"; };
 		9EE7942C5408492F9D390252 /* Pods-AnimeHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeHub.debug.xcconfig"; path = "Target Support Files/Pods-AnimeHub/Pods-AnimeHub.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +67,7 @@
 		04FA23572ACE4E380061AED7 = {
 			isa = PBXGroup;
 			children = (
+				04FA23CB2ACEA8700061AED7 /* swiftgen.yml */,
 				04FA23622ACE4E380061AED7 /* AnimeHub */,
 				04FA23612ACE4E380061AED7 /* Products */,
 				FF37920ED0C8B723244CE95C /* Pods */,
@@ -116,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */,
+				04FA23D22ACEABB40061AED7 /* Localizable.strings */,
+				04FA23D52ACEAEC80061AED7 /* Strings+Generated.swift */,
+				04FA23D82ACEAED20061AED7 /* XCAssets+Generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -217,6 +245,8 @@
 		04FA239A2ACE682D0061AED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FA23BA2ACE97300061AED7 /* FavoriteViewController.swift */,
+				04FA23BB2ACE97300061AED7 /* FavoriteViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +261,8 @@
 		04FA239C2ACE683A0061AED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FA23B52ACE97110061AED7 /* HomeViewController.swift */,
+				04FA23B62ACE97110061AED7 /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +277,8 @@
 		04FA239E2ACE68460061AED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FA23BF2ACE97620061AED7 /* SeasonalViewController.swift */,
+				04FA23C02ACE97620061AED7 /* SeasonalViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +293,8 @@
 		04FA23A02ACE685A0061AED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04FA23C42ACE97780061AED7 /* SearchViewController.swift */,
+				04FA23C52ACE97780061AED7 /* SearchViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,7 +400,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */,
+				04FA23CC2ACEA8700061AED7 /* swiftgen.yml in Resources */,
 				04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */,
+				04FA23C72ACE97780061AED7 /* SearchViewController.xib in Resources */,
+				04FA23C22ACE97620061AED7 /* SeasonalViewController.xib in Resources */,
+				04FA23D32ACEABB40061AED7 /* Localizable.strings in Resources */,
+				04FA23BD2ACE97300061AED7 /* FavoriteViewController.xib in Resources */,
+				04FA23B82ACE97110061AED7 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi \n";
 		};
 		E4917F45978ED767AA44688F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -417,9 +459,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FA23D92ACEAED20061AED7 /* XCAssets+Generated.swift in Sources */,
 				04FA23A72ACE6B370061AED7 /* TabBarViewController.swift in Sources */,
+				04FA23C62ACE97780061AED7 /* SearchViewController.swift in Sources */,
 				04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */,
 				04FA238F2ACE67DA0061AED7 /* APICaller.swift in Sources */,
+				04FA23B72ACE97110061AED7 /* HomeViewController.swift in Sources */,
+				04FA23C12ACE97620061AED7 /* SeasonalViewController.swift in Sources */,
+				04FA23D62ACEAEC80061AED7 /* Strings+Generated.swift in Sources */,
+				04FA23BC2ACE97300061AED7 /* FavoriteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
