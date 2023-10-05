@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  AnimeHub
+
+  Created by Tobi on 05/10/2023.
+  
+*/
+"homeIcon" = "house";
+"searchIcon" = "magnifyingglass";
+"seasonalIcon" = "calendar";
+"favoriteIcon" = "list.bullet";
+
+"homeTitle" = "Anime Hub";
+"searchTitle" = "Discover";
+"seasonalTitle" = "Seasonal";
+"favoriteTitle" = "My List";
+
+"homeTabTitle" = "Home";
+"searchTabTitle" = "Search";
+"seasonalTabTitle" = "Seasonal";
+"favoriteTabTitle" = "Favorite";
