@@ -3,5 +3,6 @@ target 'AnimeHub' do
 
   pod 'SwiftLint', '0.42.0'
   pod 'SwiftGen', '~> 6.0'
+  pod  'Alamofire', '5.4.2'
 
 end

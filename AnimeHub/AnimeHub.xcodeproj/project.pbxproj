@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,15 @@
 		04FA23D32ACEABB40061AED7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04FA23D22ACEABB40061AED7 /* Localizable.strings */; };
 		04FA23D62ACEAEC80061AED7 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23D52ACEAEC80061AED7 /* Strings+Generated.swift */; };
 		04FA23D92ACEAED20061AED7 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23D82ACEAED20061AED7 /* XCAssets+Generated.swift */; };
+		04FA23EC2ACEB7FB0061AED7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23EB2ACEB7FB0061AED7 /* Endpoint.swift */; };
+		04FA23EF2ACEBB8D0061AED7 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23EE2ACEBB8D0061AED7 /* Anime.swift */; };
+		04FA240A2ACF08C70061AED7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA24092ACF08C70061AED7 /* Image.swift */; };
+		04FA240D2ACF09420061AED7 /* BriefInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA240C2ACF09420061AED7 /* BriefInfo.swift */; };
+		04FA24152ACF0C400061AED7 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA24142ACF0C400061AED7 /* Statistics.swift */; };
+		04FA24182ACF0CF00061AED7 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA24172ACF0CF00061AED7 /* Score.swift */; };
+		04FA241C2ACFA8E10061AED7 /* AnimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA241B2ACFA8E10061AED7 /* AnimeResponse.swift */; };
+		04FA24202ACFA9190061AED7 /* StatisticsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA241F2ACFA9190061AED7 /* StatisticsResponse.swift */; };
+		04FA24232ACFA93E0061AED7 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA24222ACFA93E0061AED7 /* ImageResponse.swift */; };
 		6D05CA1B13EEAC5AEB429242 /* Pods_AnimeHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +56,15 @@
 		04FA23D22ACEABB40061AED7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		04FA23D52ACEAEC80061AED7 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		04FA23D82ACEAED20061AED7 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		04FA23EB2ACEB7FB0061AED7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		04FA23EE2ACEBB8D0061AED7 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		04FA24092ACF08C70061AED7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		04FA240C2ACF09420061AED7 /* BriefInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefInfo.swift; sourceTree = "<group>"; };
+		04FA24142ACF0C400061AED7 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		04FA24172ACF0CF00061AED7 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		04FA241B2ACFA8E10061AED7 /* AnimeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeResponse.swift; sourceTree = "<group>"; };
+		04FA241F2ACFA9190061AED7 /* StatisticsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsResponse.swift; sourceTree = "<group>"; };
+		04FA24222ACFA93E0061AED7 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		05098AFED9167E78FC5D4212 /* Pods_AnimeHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D97C30EEDDF7440987817 /* Pods-AnimeHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeHub.release.xcconfig"; path = "Target Support Files/Pods-AnimeHub/Pods-AnimeHub.release.xcconfig"; sourceTree = "<group>"; };
 		9EE7942C5408492F9D390252 /* Pods-AnimeHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeHub.debug.xcconfig"; path = "Target Support Files/Pods-AnimeHub/Pods-AnimeHub.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +151,13 @@
 		04FA23872ACE66100061AED7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04FA241A2ACFA8CE0061AED7 /* Response */,
+				04FA23EB2ACEB7FB0061AED7 /* Endpoint.swift */,
+				04FA23EE2ACEBB8D0061AED7 /* Anime.swift */,
+				04FA24092ACF08C70061AED7 /* Image.swift */,
+				04FA240C2ACF09420061AED7 /* BriefInfo.swift */,
+				04FA24142ACF0C400061AED7 /* Statistics.swift */,
+				04FA24172ACF0CF00061AED7 /* Score.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +348,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		04FA241A2ACFA8CE0061AED7 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				04FA241B2ACFA8E10061AED7 /* AnimeResponse.swift */,
+				04FA241F2ACFA9190061AED7 /* StatisticsResponse.swift */,
+				04FA24222ACFA93E0061AED7 /* ImageResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		ECD7EC4BCE64C3FD30FE3EE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +387,7 @@
 				04FA235D2ACE4E380061AED7 /* Frameworks */,
 				04FA235E2ACE4E380061AED7 /* Resources */,
 				04FA23792ACE51A50061AED7 /* ShellScript */,
+				EB598DDAD15846869E7DFC6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -452,6 +488,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB598DDAD15846869E7DFC6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeHub/Pods-AnimeHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeHub/Pods-AnimeHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeHub/Pods-AnimeHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -459,15 +512,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FA24152ACF0C400061AED7 /* Statistics.swift in Sources */,
 				04FA23D92ACEAED20061AED7 /* XCAssets+Generated.swift in Sources */,
+				04FA240A2ACF08C70061AED7 /* Image.swift in Sources */,
 				04FA23A72ACE6B370061AED7 /* TabBarViewController.swift in Sources */,
+				04FA24182ACF0CF00061AED7 /* Score.swift in Sources */,
 				04FA23C62ACE97780061AED7 /* SearchViewController.swift in Sources */,
 				04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */,
+				04FA241C2ACFA8E10061AED7 /* AnimeResponse.swift in Sources */,
+				04FA24232ACFA93E0061AED7 /* ImageResponse.swift in Sources */,
+				04FA23EC2ACEB7FB0061AED7 /* Endpoint.swift in Sources */,
 				04FA238F2ACE67DA0061AED7 /* APICaller.swift in Sources */,
 				04FA23B72ACE97110061AED7 /* HomeViewController.swift in Sources */,
+				04FA24202ACFA9190061AED7 /* StatisticsResponse.swift in Sources */,
 				04FA23C12ACE97620061AED7 /* SeasonalViewController.swift in Sources */,
 				04FA23D62ACEAEC80061AED7 /* Strings+Generated.swift in Sources */,
 				04FA23BC2ACE97300061AED7 /* FavoriteViewController.swift in Sources */,
+				04FA240D2ACF09420061AED7 /* BriefInfo.swift in Sources */,
+				04FA23EF2ACEBB8D0061AED7 /* Anime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
