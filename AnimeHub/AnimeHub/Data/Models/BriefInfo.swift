@@ -15,6 +15,8 @@ struct BriefInfo: Codable {
 
     enum CodingKeys: String, CodingKey {
         case malId = "mal_id"
-        case type, name, url
+        case type
+        case name
+        case url
     }
 }
