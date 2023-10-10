@@ -14,7 +14,7 @@ struct Anime: Codable {
     var title: String
     var type: String
     var source: String
-    var episodes: Int
+    var episodes: Int?
     var status: String
     var duration: String
     var rating: String
@@ -25,15 +25,32 @@ struct Anime: Codable {
     var members: Int
     var favorites: Int
     var synopsis: String
-    var season: String
-    var year: Int
+    var season: String?
+    var year: Int?
     var studios: [BriefInfo]
     var genres: [BriefInfo]
 
     enum CodingKeys: String, CodingKey {
         case malId = "mal_id"
-        case url, images, title, type, source, episodes, status, duration, rating, score
+        case url
+        case images
+        case title
+        case episodes
+        case duration
+        case score
+        case type
+        case source
+        case status
+        case rating
         case scoredBy = "scored_by"
-        case rank, popularity, members, favorites, synopsis, season, year, studios, genres
+        case season
+        case rank
+        case popularity
+        case members
+        case favorites
+        case synopsis
+        case year
+        case studios
+        case genres
     }
 }

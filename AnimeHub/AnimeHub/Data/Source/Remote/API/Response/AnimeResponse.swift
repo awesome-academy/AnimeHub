@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ListAnimeResponse {
+struct ListAnimeResponse: Codable {
     var data: [Anime]
 }
 
