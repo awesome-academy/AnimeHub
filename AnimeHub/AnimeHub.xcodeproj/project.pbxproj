@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04266EBF2AD5A2F400488149 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266EBE2AD5A2F400488149 /* SearchViewModel.swift */; };
+		04266EC22AD5A32700488149 /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266EC12AD5A32700488149 /* SearchUseCase.swift */; };
+		04266EC52AD5A33800488149 /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266EC42AD5A33800488149 /* SearchNavigator.swift */; };
+		04266EC82AD5A55A00488149 /* UISearchhBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266EC72AD5A55A00488149 /* UISearchhBar+.swift */; };
+		04266ECB2AD5A57500488149 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266ECA2AD5A57500488149 /* UIImage+.swift */; };
+		04266ED02AD5AB5F00488149 /* AnimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266ECE2AD5AB5F00488149 /* AnimeCollectionViewCell.swift */; };
+		04266ED12AD5AB5F00488149 /* AnimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04266ECF2AD5AB5F00488149 /* AnimeCollectionViewCell.xib */; };
+		04266ED52AD62FCC00488149 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266ED42AD62FCC00488149 /* SearchRequest.swift */; };
+		04266ED82AD6360D00488149 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266ED72AD6360D00488149 /* SearchRepository.swift */; };
 		04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23632ACE4E380061AED7 /* AppDelegate.swift */; };
 		04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */; };
 		04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */; };
@@ -53,6 +62,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04266EBE2AD5A2F400488149 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		04266EC12AD5A32700488149 /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		04266EC42AD5A33800488149 /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
+		04266EC72AD5A55A00488149 /* UISearchhBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchhBar+.swift"; sourceTree = "<group>"; };
+		04266ECA2AD5A57500488149 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		04266ECE2AD5AB5F00488149 /* AnimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		04266ECF2AD5AB5F00488149 /* AnimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		04266ED42AD62FCC00488149 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		04266ED72AD6360D00488149 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		04FA23602ACE4E380061AED7 /* AnimeHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FA23632ACE4E380061AED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04266ECD2AD5AB3800488149 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04266ECE2AD5AB5F00488149 /* AnimeCollectionViewCell.swift */,
+				04266ECF2AD5AB5F00488149 /* AnimeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		04FA23572ACE4E380061AED7 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +199,8 @@
 				04FA24A32AD392480061AED7 /* UIViewController+.swift */,
 				04FA24B22AD396CA0061AED7 /* ViewController+Rx.swift */,
 				04FA24E82AD3E2000061AED7 /* UINavigationController+.swift */,
+				04266EC72AD5A55A00488149 /* UISearchhBar+.swift */,
+				04266ECA2AD5A57500488149 /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -246,8 +275,11 @@
 		04FA23932ACE67ED0061AED7 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				04266ECD2AD5AB3800488149 /* Cell */,
 				04FA23A02ACE685A0061AED7 /* View */,
 				04FA239F2ACE684E0061AED7 /* ViewModel */,
+				04266EC12AD5A32700488149 /* SearchUseCase.swift */,
+				04266EC42AD5A33800488149 /* SearchNavigator.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -345,6 +377,7 @@
 		04FA239F2ACE684E0061AED7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04266EBE2AD5A2F400488149 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -382,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				04FA24572ACFF8F90061AED7 /* RecommendationsRepository.swift */,
+				04266ED72AD6360D00488149 /* SearchRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -443,6 +477,7 @@
 			children = (
 				04FA24D82AD3D1480061AED7 /* BaseRequest.swift */,
 				04FA24E02AD3D3990061AED7 /* AnimeRequest.swift */,
+				04266ED42AD62FCC00488149 /* SearchRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -531,6 +566,7 @@
 				04FA24452ACFF64D0061AED7 /* HomeTableViewCell.xib in Resources */,
 				04FA23C22ACE97620061AED7 /* SeasonalViewController.xib in Resources */,
 				04FA23D32ACEABB40061AED7 /* Localizable.strings in Resources */,
+				04266ED12AD5AB5F00488149 /* AnimeCollectionViewCell.xib in Resources */,
 				04FA23BD2ACE97300061AED7 /* FavoriteViewController.xib in Resources */,
 				04FA23B82ACE97110061AED7 /* HomeViewController.xib in Resources */,
 			);
@@ -602,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04266EC22AD5A32700488149 /* SearchUseCase.swift in Sources */,
 				04FA24662AD1975A0061AED7 /* ViewModelType.swift in Sources */,
 				04FA24A42AD392480061AED7 /* UIViewController+.swift in Sources */,
 				04FA24152ACF0C400061AED7 /* Statistics.swift in Sources */,
@@ -614,9 +651,14 @@
 				04FA24B32AD396CA0061AED7 /* ViewController+Rx.swift in Sources */,
 				04FA24442ACFF64D0061AED7 /* HomeTableViewCell.swift in Sources */,
 				04FA24972AD38E990061AED7 /* AppNavigator.swift in Sources */,
+				04266ED52AD62FCC00488149 /* SearchRequest.swift in Sources */,
 				04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */,
+				04266EC82AD5A55A00488149 /* UISearchhBar+.swift in Sources */,
 				04FA246C2AD19D260061AED7 /* HomeNavigator.swift in Sources */,
+				04266EBF2AD5A2F400488149 /* SearchViewModel.swift in Sources */,
 				04FA24582ACFF8F90061AED7 /* RecommendationsRepository.swift in Sources */,
+				04266EC52AD5A33800488149 /* SearchNavigator.swift in Sources */,
+				04266ED82AD6360D00488149 /* SearchRepository.swift in Sources */,
 				04FA24D92AD3D1480061AED7 /* BaseRequest.swift in Sources */,
 				04FA241C2ACFA8E10061AED7 /* AnimeResponse.swift in Sources */,
 				04FA24232ACFA93E0061AED7 /* ImageResponse.swift in Sources */,
@@ -628,6 +670,7 @@
 				04FA24E12AD3D3990061AED7 /* AnimeRequest.swift in Sources */,
 				04FA24202ACFA9190061AED7 /* StatisticsResponse.swift in Sources */,
 				04FA23C12ACE97620061AED7 /* SeasonalViewController.swift in Sources */,
+				04266ED02AD5AB5F00488149 /* AnimeCollectionViewCell.swift in Sources */,
 				04FA23D62ACEAEC80061AED7 /* Strings+Generated.swift in Sources */,
 				04FA246F2AD1A52E0061AED7 /* Bindable.swift in Sources */,
 				04FA23BC2ACE97300061AED7 /* FavoriteViewController.swift in Sources */,
@@ -635,6 +678,7 @@
 				04FA249B2AD38EAA0061AED7 /* AppUseCase.swift in Sources */,
 				04FA24692AD19D100061AED7 /* HomeUseCase.swift in Sources */,
 				04FA23EF2ACEBB8D0061AED7 /* Anime.swift in Sources */,
+				04266ECB2AD5A57500488149 /* UIImage+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

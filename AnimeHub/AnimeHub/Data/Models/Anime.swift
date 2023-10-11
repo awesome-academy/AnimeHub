@@ -15,16 +15,16 @@ struct Anime: Codable {
     var type: String
     var source: String
     var episodes: Int?
-    var status: String
-    var duration: String
-    var rating: String
-    var score: Double
-    var scoredBy: Int
-    var rank: Int
-    var popularity: Int
-    var members: Int
-    var favorites: Int
-    var synopsis: String
+    var status: String?
+    var duration: String?
+    var rating: String?
+    var score: Double?
+    var scoredBy: Int?
+    var rank: Int?
+    var popularity: Int?
+    var members: Int?
+    var favorites: Int?
+    var synopsis: String?
     var season: String?
     var year: Int?
     var studios: [BriefInfo]
