@@ -8,9 +8,9 @@
 import Foundation
 
 struct Endpoint {
-    static var baseURL = "https://api.jikan.moe/v4/"
-    static var animeDomain = baseURL + "anime"
-    static var seasonDomain = baseURL + "seasons"
-    static var topDomain = baseURL + "top/anime"
-    static var recommendationDomain = baseURL + "recommendations/anime"
+    static var baseURL = "https://api.jikan.moe/v4"
+    static var animeDomain = baseURL + "/anime"
+    static var seasonDomain = baseURL + "/seasons/now"
+    static var topDomain = baseURL + "/top/anime"
+    static var recommendationDomain = baseURL + "/recommendations/anime"
 }

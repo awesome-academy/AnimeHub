@@ -9,7 +9,7 @@ import Foundation
 
 final class AnimeRequest: BaseRequest {
     required init() {
-        super.init(url: Endpoint.animeDomain,
+        super.init(url: Endpoint.topDomain,
                    requestType: .get,
                    parameter: [:])
     }
