@@ -16,4 +16,14 @@ extension UINavigationController {
         viewController.bindViewModel(to: viewModel)
         return UINavigationController(rootViewController: viewController)
     }
+
+    static func setUpSearchController() -> UINavigationController {
+        let viewController = SearchViewController()
+        let navigator = SearchNavigator()
+        let useCase = SearchUseCase()
+        let viewModel = SearchViewModel(useCase: useCase, navigator: navigator)
+        viewController.bindViewModel(to: viewModel)
+        return UINavigationController(rootViewController: viewController)
+    }
+
 }

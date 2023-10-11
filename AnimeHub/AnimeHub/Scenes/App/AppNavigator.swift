@@ -60,13 +60,15 @@ struct AppNavigator: AppNavigatorType {
     func configureTabBar(tabBar: UITabBarController) {
 
         let homeVC = UINavigationController.setUpHomeController()
-        let searchVC = UINavigationController(rootViewController: SearchViewController())
+        let searchVC = UINavigationController.setUpSearchController()
         let seasonalVC = UINavigationController(rootViewController: SeasonalViewController())
         let favoritesVC = UINavigationController(rootViewController: FavoriteViewController())
 
         tabBar.setViewControllers([homeVC, searchVC, seasonalVC, favoritesVC], animated: true)
-        tabBar.tabBar.backgroundColor = .black
-        tabBar.tabBar.tintColor = .white
+        tabBar.tabBar.then {
+            $0.backgroundColor = .black
+            $0.tintColor = .white
+        }
 
         guard let items = tabBar.tabBar.items else {
             return
