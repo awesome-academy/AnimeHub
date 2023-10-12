@@ -26,4 +26,12 @@ extension UINavigationController {
         return UINavigationController(rootViewController: viewController)
     }
 
+    static func setUpSeasonalController() -> UINavigationController {
+        let viewController = SeasonalViewController()
+        let navigator = SeasonalNavigator()
+        let useCase = SeasonalUseCase()
+        let viewModel = SeasonalViewModel(useCase: useCase, navigator: navigator)
+        viewController.bindViewModel(to: viewModel)
+        return UINavigationController(rootViewController: viewController)
+    }
 }
