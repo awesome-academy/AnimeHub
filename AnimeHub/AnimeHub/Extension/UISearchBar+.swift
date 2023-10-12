@@ -13,7 +13,7 @@ extension UISearchBar {
         self.barTintColor = UIColor.clear
         self.backgroundColor = UIColor.clear
         self.backgroundImage = UIImage()
-        self.searchTextField.then {
+        self.searchTextField.do {
             $0.backgroundColor = .white
             $0.textColor = .black
             $0.leftView?.tintColor = .black
@@ -31,7 +31,7 @@ extension UISearchBar {
                 if #available(iOS 13.0, *) {
                     for child in subSubViews.subviews {
                         if let textField = child as? UISearchTextField {
-                            textField.then {
+                            textField.do {
                                 $0.layer.cornerRadius = radius
                                 $0.clipsToBounds = true
                             }
@@ -40,7 +40,7 @@ extension UISearchBar {
                     continue
                 }
                 if let textField = subSubViews as? UITextField {
-                    textField.then {
+                    textField.do {
                         $0.layer.cornerRadius = radius
                         $0.clipsToBounds = true
                     }

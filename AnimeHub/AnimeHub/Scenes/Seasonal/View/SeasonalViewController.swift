@@ -43,7 +43,7 @@ final class SeasonalViewController: UIViewController, Bindable {
                 }
         }
 
-        categoryButton.then {
+        categoryButton.do {
             $0.menu = UIMenu(children: filterMenu)
             $0.showsMenuAsPrimaryAction = true
         }

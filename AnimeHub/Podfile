@@ -11,5 +11,6 @@ target 'AnimeHub' do
   pod 'MBProgressHUD', '1.2.0'
   pod 'Reusable', '4.1.1'
   pod 'Then', '~> 2.7.0'
+  pod 'GMStepper', '2.2'
 
 end

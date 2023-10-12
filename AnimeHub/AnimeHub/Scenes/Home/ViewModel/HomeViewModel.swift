@@ -19,6 +19,7 @@ struct HomeViewModel {
 extension HomeViewModel: ViewModelType {
     struct Input {
         let load: Driver<Void>
+        let openBottomSheet: Driver<IndexPath>
     }
 
     struct Output {
@@ -35,6 +36,16 @@ extension HomeViewModel: ViewModelType {
                     .trackActivity(indicator)
                     .asDriver(onErrorJustReturn: [])
             }
+
+        input.openBottomSheet
+            .withLatestFrom(anime) { indexPath, animeList in
+                return animeList[indexPath.row]
+            }
+            .drive(onNext: { anime in
+                self.navigator.openBottomSheet(anime: anime)
+            })
+            .disposed(by: disposeBag)
+
         return Output(animeList: anime, isLoading: indicator.asDriver())
     }
 }
