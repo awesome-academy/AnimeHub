@@ -20,7 +20,7 @@ final class AnimeCollectionViewCell: UICollectionViewCell, NibReusable {
     }
 
     private func configView() {
-        imageView.then {
+        imageView.do {
             $0.clipsToBounds = true
             $0.layer.cornerRadius = 16
         }

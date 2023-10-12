@@ -23,6 +23,10 @@
 		04266F012AD6734100488149 /* SeasonalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266F002AD6734100488149 /* SeasonalRepository.swift */; };
 		04266F042AD6770F00488149 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266F032AD6770F00488149 /* Filter.swift */; };
 		04266F122AD68AA800488149 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266F112AD68AA800488149 /* String+.swift */; };
+		04266F212AD6A68500488149 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266F1F2AD6A68500488149 /* BottomSheetViewController.swift */; };
+		04266F222AD6A68500488149 /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04266F202AD6A68500488149 /* BottomSheetViewController.xib */; };
+		04266F252AD6A89E00488149 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266F242AD6A89E00488149 /* PresentationController.swift */; };
+		04266F282AD6E9FB00488149 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04266F272AD6E9FB00488149 /* UIButton+.swift */; };
 		04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23632ACE4E380061AED7 /* AppDelegate.swift */; };
 		04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */; };
 		04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */; };
@@ -85,6 +89,10 @@
 		04266F002AD6734100488149 /* SeasonalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalRepository.swift; sourceTree = "<group>"; };
 		04266F032AD6770F00488149 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		04266F112AD68AA800488149 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		04266F1F2AD6A68500488149 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		04266F202AD6A68500488149 /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		04266F242AD6A89E00488149 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		04266F272AD6E9FB00488149 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		04FA23602ACE4E380061AED7 /* AnimeHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FA23632ACE4E380061AED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -216,6 +224,7 @@
 				04266EC72AD5A55A00488149 /* UISearchBar+.swift */,
 				04266ECA2AD5A57500488149 /* UIImage+.swift */,
 				04266F112AD68AA800488149 /* String+.swift */,
+				04266F272AD6E9FB00488149 /* UIButton+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 				04FA24B52AD3AAB50061AED7 /* Constant */,
 				04FA24652AD1975A0061AED7 /* ViewModelType.swift */,
 				04FA246E2AD1A52E0061AED7 /* Bindable.swift */,
+				04266F242AD6A89E00488149 /* PresentationController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -372,6 +382,8 @@
 			children = (
 				04FA23B52ACE97110061AED7 /* HomeViewController.swift */,
 				04FA23B62ACE97110061AED7 /* HomeViewController.xib */,
+				04266F1F2AD6A68500488149 /* BottomSheetViewController.swift */,
+				04266F202AD6A68500488149 /* BottomSheetViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -589,6 +601,7 @@
 				04FA23D32ACEABB40061AED7 /* Localizable.strings in Resources */,
 				04266ED12AD5AB5F00488149 /* AnimeCollectionViewCell.xib in Resources */,
 				04FA23BD2ACE97300061AED7 /* FavoriteViewController.xib in Resources */,
+				04266F222AD6A68500488149 /* BottomSheetViewController.xib in Resources */,
 				04FA23B82ACE97110061AED7 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04266EC22AD5A32700488149 /* SearchUseCase.swift in Sources */,
+				04266F212AD6A68500488149 /* BottomSheetViewController.swift in Sources */,
 				04FA24662AD1975A0061AED7 /* ViewModelType.swift in Sources */,
 				04FA24A42AD392480061AED7 /* UIViewController+.swift in Sources */,
 				04FA24152ACF0C400061AED7 /* Statistics.swift in Sources */,
@@ -667,6 +681,7 @@
 				04266F122AD68AA800488149 /* String+.swift in Sources */,
 				04FA23D92ACEAED20061AED7 /* XCAssets+Generated.swift in Sources */,
 				04266F012AD6734100488149 /* SeasonalRepository.swift in Sources */,
+				04266F282AD6E9FB00488149 /* UIButton+.swift in Sources */,
 				04FA240A2ACF08C70061AED7 /* Image.swift in Sources */,
 				04266EE92AD657F300488149 /* SeasonalRequest.swift in Sources */,
 				04FA24542ACFF8750061AED7 /* HomeViewModel.swift in Sources */,
@@ -706,6 +721,7 @@
 				04FA249B2AD38EAA0061AED7 /* AppUseCase.swift in Sources */,
 				04FA24692AD19D100061AED7 /* HomeUseCase.swift in Sources */,
 				04FA23EF2ACEBB8D0061AED7 /* Anime.swift in Sources */,
+				04266F252AD6A89E00488149 /* PresentationController.swift in Sources */,
 				04266ECB2AD5A57500488149 /* UIImage+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

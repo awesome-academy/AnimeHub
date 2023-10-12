@@ -15,6 +15,7 @@ final class HomeViewController: UIViewController, Bindable {
 
     var viewModel: HomeViewModel!
     private let disposeBag = DisposeBag()
+    private var openSheetTrigger = PublishSubject<IndexPath>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,10 @@ final class HomeViewController: UIViewController, Bindable {
     func bindViewModel() {
         let loadTrigger = Driver.just(())
 
-        let input = HomeViewModel.Input(load: loadTrigger)
+        let input = HomeViewModel.Input(
+            load: loadTrigger,
+            openBottomSheet: openSheetTrigger.asDriver(onErrorJustReturn: IndexPath())
+        )
 
         let output = viewModel.transform(input, disposeBag: disposeBag)
 
@@ -40,6 +44,9 @@ final class HomeViewController: UIViewController, Bindable {
                 let indexPath = IndexPath(row: row, section: 0)
                 let cell: HomeTableViewCell = table.dequeueReusableCell(for: indexPath)
                 cell.configCell(anime: element)
+                cell.addToFavorite = {
+                    self.openSheetTrigger.onNext(IndexPath(row: row, section: 0))
+                }
                 return cell
             }
             .disposed(by: disposeBag)
@@ -47,5 +54,11 @@ final class HomeViewController: UIViewController, Bindable {
         output.isLoading
             .drive(rx.isLoading)
             .disposed(by: disposeBag)
+    }
+}
+
+extension HomeViewController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        PresentationController(presentedViewController: presented, presenting: presenting)
     }
 }

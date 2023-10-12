@@ -65,7 +65,7 @@ struct AppNavigator: AppNavigatorType {
         let favoritesVC = UINavigationController(rootViewController: FavoriteViewController())
 
         tabBar.setViewControllers([homeVC, searchVC, seasonalVC, favoritesVC], animated: true)
-        tabBar.tabBar.then {
+        tabBar.tabBar.do {
             $0.backgroundColor = .black
             $0.tintColor = .white
         }
