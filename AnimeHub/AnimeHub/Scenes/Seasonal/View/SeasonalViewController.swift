@@ -17,6 +17,7 @@ final class SeasonalViewController: UIViewController, Bindable {
     var viewModel: SeasonalViewModel!
     private var selectionFilter = "tv" // TODO: test category
     private let disposeBag = DisposeBag()
+    private var selectTrigger = PublishSubject<IndexPath>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,8 @@ final class SeasonalViewController: UIViewController, Bindable {
 
         let input = SeasonalViewModel.Input(
             load: loadTrigger,
-            filter: Driver.just(selectionFilter)
+            filter: Driver.just(selectionFilter),
+            selectTrigger: selectTrigger.asDriver(onErrorJustReturn: IndexPath())
         )
 
         let output = viewModel.transform(input, disposeBag: disposeBag)
@@ -64,6 +66,9 @@ final class SeasonalViewController: UIViewController, Bindable {
                 let indexPath = IndexPath(row: row, section: 0)
                 let cell: AnimeCollectionViewCell = table.dequeueReusableCell(for: indexPath)
                 cell.configCell(anime: element)
+                cell.goDetail = {
+                    self.selectTrigger.onNext(IndexPath(row: row, section: 0))
+                }
                 return cell
             }
             .disposed(by: disposeBag)

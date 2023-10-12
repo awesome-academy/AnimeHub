@@ -20,19 +20,21 @@ extension UINavigationController {
 
     static func setUpSearchController() -> UINavigationController {
         let viewController = SearchViewController()
-        let navigator = SearchNavigator()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        let navigator = SearchNavigator(navigationController: navigationController)
         let useCase = SearchUseCase()
         let viewModel = SearchViewModel(useCase: useCase, navigator: navigator)
         viewController.bindViewModel(to: viewModel)
-        return UINavigationController(rootViewController: viewController)
+        return navigationController
     }
 
     static func setUpSeasonalController() -> UINavigationController {
         let viewController = SeasonalViewController()
-        let navigator = SeasonalNavigator()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        let navigator = SeasonalNavigator(navigationController: navigationController)
         let useCase = SeasonalUseCase()
         let viewModel = SeasonalViewModel(useCase: useCase, navigator: navigator)
         viewController.bindViewModel(to: viewModel)
-        return UINavigationController(rootViewController: viewController)
+        return navigationController
     }
 }

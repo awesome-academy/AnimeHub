@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,36 +17,53 @@
                 <rect key="frame" x="0.0" y="0.0" width="140" height="195"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BlV-A8-ciX">
-                        <rect key="frame" x="0.0" y="0.0" width="140" height="151.5"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-NC-DIm">
-                        <rect key="frame" x="0.0" y="159.5" width="140" height="27.5"/>
-                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjT-Vl-uuo">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="195"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-NC-DIm">
+                                <rect key="frame" x="0.0" y="159.5" width="140" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BlV-A8-ciX">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="151.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BlV-A8-ciX" secondAttribute="trailing" id="Mao-7Y-N1a"/>
+                            <constraint firstAttribute="trailing" secondItem="wBM-NC-DIm" secondAttribute="trailing" id="P8q-zx-kzv"/>
+                            <constraint firstItem="wBM-NC-DIm" firstAttribute="top" secondItem="BlV-A8-ciX" secondAttribute="bottom" constant="8" id="Sd0-y6-dhr"/>
+                            <constraint firstAttribute="bottom" secondItem="wBM-NC-DIm" secondAttribute="bottom" constant="8" id="Uga-tp-YwX"/>
+                            <constraint firstItem="BlV-A8-ciX" firstAttribute="top" secondItem="YjT-Vl-uuo" secondAttribute="top" id="ZRG-ki-ICt"/>
+                            <constraint firstItem="BlV-A8-ciX" firstAttribute="leading" secondItem="YjT-Vl-uuo" secondAttribute="leading" id="aTF-jg-b1D"/>
+                            <constraint firstItem="wBM-NC-DIm" firstAttribute="leading" secondItem="YjT-Vl-uuo" secondAttribute="leading" id="ehe-e1-8Bi"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="wBM-NC-DIm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1Vv-8n-OkK"/>
-                <constraint firstItem="wBM-NC-DIm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E0o-UQ-bkM"/>
-                <constraint firstAttribute="bottom" secondItem="wBM-NC-DIm" secondAttribute="bottom" constant="8" id="U8K-sl-zqu"/>
-                <constraint firstItem="BlV-A8-ciX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Z0z-3V-bbd"/>
-                <constraint firstItem="wBM-NC-DIm" firstAttribute="top" secondItem="BlV-A8-ciX" secondAttribute="bottom" constant="8" id="eyk-mz-VRb"/>
-                <constraint firstAttribute="trailing" secondItem="BlV-A8-ciX" secondAttribute="trailing" id="kc2-Nh-Cfz"/>
-                <constraint firstItem="BlV-A8-ciX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vBA-Wd-Odo"/>
-                <constraint firstAttribute="trailing" secondItem="wBM-NC-DIm" secondAttribute="trailing" id="wPA-g0-b1F"/>
+                <constraint firstAttribute="trailing" secondItem="YjT-Vl-uuo" secondAttribute="trailing" id="OlS-Sn-Q8f"/>
+                <constraint firstItem="YjT-Vl-uuo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xst-Kl-ELA"/>
+                <constraint firstItem="YjT-Vl-uuo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vwt-aB-6hE"/>
+                <constraint firstAttribute="bottom" secondItem="YjT-Vl-uuo" secondAttribute="bottom" id="zE3-BZ-aul"/>
             </constraints>
             <size key="customSize" width="140" height="195"/>
             <connections>
                 <outlet property="imageView" destination="BlV-A8-ciX" id="X7Y-bR-QGG"/>
                 <outlet property="titleLabel" destination="wBM-NC-DIm" id="bsw-tG-fKT"/>
+                <outlet property="view" destination="YjT-Vl-uuo" id="lFa-bX-ZtS"/>
             </connections>
             <point key="canvasLocation" x="-81.159420289855078" y="118.19196428571428"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
