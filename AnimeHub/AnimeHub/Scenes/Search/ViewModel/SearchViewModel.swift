@@ -21,6 +21,7 @@ extension SearchViewModel: ViewModelType {
         let load: Driver<Void>
         let keyword: Driver<String>
         let searchTrigger: Driver<Void>
+        let selectTrigger: Driver<IndexPath>
     }
 
     struct Output {
@@ -41,6 +42,15 @@ extension SearchViewModel: ViewModelType {
                     .trackActivity(activityIndicator)
                     .asDriver(onErrorJustReturn: [])
             }
+
+        input.selectTrigger
+            .withLatestFrom(searchResult) { indexPath, searchResult in
+                return searchResult[indexPath.row]
+            }
+            .drive(onNext: { anime in
+                self.navigator.goDetail(anime: anime)
+            })
+            .disposed(by: disposeBag)
 
         return Output(
             searchResult: searchResult,

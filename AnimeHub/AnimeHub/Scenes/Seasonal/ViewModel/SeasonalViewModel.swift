@@ -20,6 +20,7 @@ extension SeasonalViewModel: ViewModelType {
     struct Input {
         let load: Driver<Void>
         let filter: Driver<String>
+        let selectTrigger: Driver<IndexPath>
     }
 
     struct Output {
@@ -39,6 +40,15 @@ extension SeasonalViewModel: ViewModelType {
                     .trackActivity(indicator)
                     .asDriver(onErrorJustReturn: [])
             }
+
+        input.selectTrigger
+            .withLatestFrom(result) { indexPath, animeList in
+                return animeList[indexPath.row]
+            }
+            .drive(onNext: { anime in
+                self.navigator.goDetail(anime: anime)
+            })
+            .disposed(by: disposeBag)
 
         return Output(animeList: result, isLoading: indicator.asDriver())
     }
