@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetViewController" customModule="AnimeHub" customModuleProvider="target">
             <connections>
+                <outlet property="addButton" destination="QVU-jQ-DY1" id="TJD-1j-a9g"/>
                 <outlet property="completeButton" destination="e9j-wV-pG9" id="yAe-NN-iov"/>
                 <outlet property="droppedButton" destination="6YT-lu-mlj" id="yui-6z-MLK"/>
                 <outlet property="onHoldButton" destination="SXb-37-34I" id="qKW-be-R14"/>
@@ -138,7 +139,7 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVU-jQ-DY1">
                     <rect key="frame" x="16" y="471.5" width="382" height="60"/>
-                    <color key="backgroundColor" red="0.50981110330000001" green="0.50979107619999997" blue="0.50980466599999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.094117647060000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="ruy-cq-YU5"/>
                     </constraints>

@@ -62,7 +62,7 @@ struct AppNavigator: AppNavigatorType {
         let homeVC = UINavigationController.setUpHomeController()
         let searchVC = UINavigationController.setUpSearchController()
         let seasonalVC = UINavigationController.setUpSeasonalController()
-        let favoritesVC = UINavigationController(rootViewController: FavoriteViewController())
+        let favoritesVC = UINavigationController.setUpFavoriteController()
 
         tabBar.setViewControllers([homeVC, searchVC, seasonalVC, favoritesVC], animated: true)
         tabBar.tabBar.do {
