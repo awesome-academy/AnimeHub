@@ -13,6 +13,8 @@ struct Constant {
         static var animeCellHeight = CGFloat(250)
         static var paddingHorizontal = CGFloat(16)
         static var favoriteCellHeight = CGFloat(180)
+        static var charCellW = CGFloat(120)
+        static var charCellH = CGFloat(160)
     }
 
     struct Number {
@@ -24,5 +26,15 @@ struct Constant {
         static var empty = ""
         static var defaultStatus = "Watching"
         static var isSaved = "Already in your list"
+    }
+
+    struct Object {
+        static var defaultStatistics = Statistics(
+            watching: 0,
+            completed: 0,
+            onHold: 0,
+            dropped: 0,
+            planToWatch: 0,
+            total: 0)
     }
 }

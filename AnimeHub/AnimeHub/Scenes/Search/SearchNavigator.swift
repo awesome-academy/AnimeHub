@@ -16,7 +16,7 @@ struct SearchNavigator: SearchNavigatorType {
 
     func goDetail(anime: Anime) {
         let useCase = DetailUseCase()
-        let navigator = DetailNavigator()
+        let navigator = DetailNavigator(navigationController: navigationController)
         let viewModel = DetailViewModel(useCase: useCase, navigator: navigator)
         let viewController = DetailViewController().then {
             $0.anime = anime

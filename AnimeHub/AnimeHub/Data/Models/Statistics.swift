@@ -14,15 +14,13 @@ struct Statistics: Codable {
     var dropped: Int
     var planToWatch: Int
     var total: Int
-    var scores: [Score]
 
     enum CodingKeys: String, CodingKey {
         case watching
         case completed
-        case dropped
-        case total
-        case scores
         case onHold = "on_hold"
+        case dropped
         case planToWatch = "plan_to_watch"
+        case total
     }
 }

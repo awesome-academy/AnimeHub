@@ -20,6 +20,7 @@ extension HomeViewModel: ViewModelType {
     struct Input {
         let load: Driver<Void>
         let openBottomSheet: Driver<IndexPath>
+        let selectTrigger: Driver<IndexPath>
     }
 
     struct Output {
@@ -36,6 +37,15 @@ extension HomeViewModel: ViewModelType {
                     .trackActivity(indicator)
                     .asDriver(onErrorJustReturn: [])
             }
+
+        input.selectTrigger
+            .withLatestFrom(anime) { indexPath, result in
+                return result[indexPath.row]
+            }
+            .drive(onNext: { anime in
+                self.navigator.goDetail(anime: anime)
+            })
+            .disposed(by: disposeBag)
 
         input.openBottomSheet
             .withLatestFrom(anime) { indexPath, animeList in
