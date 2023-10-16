@@ -31,6 +31,15 @@
 		04924A9F2AD7CBAE00BEC003 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924A9E2AD7CBAE00BEC003 /* DetailViewModel.swift */; };
 		04924AA32AD7CBCB00BEC003 /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AA22AD7CBCB00BEC003 /* DetailUseCase.swift */; };
 		04924AA62AD7CBF200BEC003 /* DetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AA52AD7CBF200BEC003 /* DetailNavigator.swift */; };
+		04924AB22AD7EC8A00BEC003 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AB12AD7EC8A00BEC003 /* CoreDataManager.swift */; };
+		04924AB72AD7F34700BEC003 /* AnimeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04924AB52AD7F34700BEC003 /* AnimeModel.xcdatamodeld */; };
+		04924AC52AD8E59C00BEC003 /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AC42AD8E59C00BEC003 /* BottomSheetViewModel.swift */; };
+		04924AC82AD91B5200BEC003 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AC72AD91B5200BEC003 /* FavoriteViewModel.swift */; };
+		04924ACB2AD91C3100BEC003 /* FavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924ACA2AD91C3100BEC003 /* FavoriteUseCase.swift */; };
+		04924ACE2AD91C4100BEC003 /* FavoriteNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924ACD2AD91C4100BEC003 /* FavoriteNavigator.swift */; };
+		04924ADA2AD9410300BEC003 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AD82AD9410300BEC003 /* FavoriteTableViewCell.swift */; };
+		04924ADB2AD9410300BEC003 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04924AD92AD9410300BEC003 /* FavoriteTableViewCell.xib */; };
+		04924AEE2ADCD72400BEC003 /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04924AED2ADCD72400BEC003 /* DatabaseError.swift */; };
 		04FA23642ACE4E380061AED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA23632ACE4E380061AED7 /* AppDelegate.swift */; };
 		04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */; };
 		04FA23702ACE4E3F0061AED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA236E2ACE4E3F0061AED7 /* LaunchScreen.storyboard */; };
@@ -101,6 +110,15 @@
 		04924A9E2AD7CBAE00BEC003 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		04924AA22AD7CBCB00BEC003 /* DetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUseCase.swift; sourceTree = "<group>"; };
 		04924AA52AD7CBF200BEC003 /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
+		04924AB12AD7EC8A00BEC003 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		04924AB62AD7F34700BEC003 /* AnimeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimeModel.xcdatamodel; sourceTree = "<group>"; };
+		04924AC42AD8E59C00BEC003 /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
+		04924AC72AD91B5200BEC003 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		04924ACA2AD91C3100BEC003 /* FavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUseCase.swift; sourceTree = "<group>"; };
+		04924ACD2AD91C4100BEC003 /* FavoriteNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNavigator.swift; sourceTree = "<group>"; };
+		04924AD82AD9410300BEC003 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		04924AD92AD9410300BEC003 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		04924AED2ADCD72400BEC003 /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
 		04FA23602ACE4E380061AED7 /* AnimeHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FA23632ACE4E380061AED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FA236C2ACE4E3F0061AED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +185,24 @@
 			children = (
 				04266ECE2AD5AB5F00488149 /* AnimeCollectionViewCell.swift */,
 				04266ECF2AD5AB5F00488149 /* AnimeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04924AB02AD7EC1200BEC003 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				04924AB52AD7F34700BEC003 /* AnimeModel.xcdatamodeld */,
+				04924AB12AD7EC8A00BEC003 /* CoreDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		04924AD72AD9405800BEC003 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04924AD82AD9410300BEC003 /* FavoriteTableViewCell.swift */,
+				04924AD92AD9410300BEC003 /* FavoriteTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -247,6 +283,7 @@
 				04FA24142ACF0C400061AED7 /* Statistics.swift */,
 				04FA24172ACF0CF00061AED7 /* Score.swift */,
 				04266F032AD6770F00488149 /* Filter.swift */,
+				04924AED2ADCD72400BEC003 /* DatabaseError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +371,8 @@
 			children = (
 				04FA239A2ACE682D0061AED7 /* View */,
 				04FA23992ACE68250061AED7 /* ViewModel */,
+				04924ACA2AD91C3100BEC003 /* FavoriteUseCase.swift */,
+				04924ACD2AD91C4100BEC003 /* FavoriteNavigator.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -368,6 +407,7 @@
 		04FA23992ACE68250061AED7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04924AC72AD91B5200BEC003 /* FavoriteViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -375,6 +415,7 @@
 		04FA239A2ACE682D0061AED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04924AD72AD9405800BEC003 /* Cell */,
 				04FA23BA2ACE97300061AED7 /* FavoriteViewController.swift */,
 				04FA23BB2ACE97300061AED7 /* FavoriteViewController.xib */,
 			);
@@ -385,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				04FA24532ACFF8750061AED7 /* HomeViewModel.swift */,
+				04924AC42AD8E59C00BEC003 /* BottomSheetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -485,17 +527,10 @@
 		04FA24D02AD3CF190061AED7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				04FA24D42AD3CF840061AED7 /* Local */,
+				04924AB02AD7EC1200BEC003 /* Local */,
 				04FA24D52AD3D0140061AED7 /* Remote */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		04FA24D42AD3CF840061AED7 /* Local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		04FA24D52AD3D0140061AED7 /* Remote */ = {
@@ -609,6 +644,7 @@
 				04FA236D2ACE4E3F0061AED7 /* Assets.xcassets in Resources */,
 				04FA23C72ACE97780061AED7 /* SearchViewController.xib in Resources */,
 				04FA24452ACFF64D0061AED7 /* HomeTableViewCell.xib in Resources */,
+				04924ADB2AD9410300BEC003 /* FavoriteTableViewCell.xib in Resources */,
 				04FA23C22ACE97620061AED7 /* SeasonalViewController.xib in Resources */,
 				04FA23D32ACEABB40061AED7 /* Localizable.strings in Resources */,
 				04266ED12AD5AB5F00488149 /* AnimeCollectionViewCell.xib in Resources */,
@@ -696,7 +732,9 @@
 				04266F282AD6E9FB00488149 /* UIButton+.swift in Sources */,
 				04FA240A2ACF08C70061AED7 /* Image.swift in Sources */,
 				04266EE92AD657F300488149 /* SeasonalRequest.swift in Sources */,
+				04924ACE2AD91C4100BEC003 /* FavoriteNavigator.swift in Sources */,
 				04FA24542ACFF8750061AED7 /* HomeViewModel.swift in Sources */,
+				04924AEE2ADCD72400BEC003 /* DatabaseError.swift in Sources */,
 				04266EE22AD64BD400488149 /* SeasonalNavigator.swift in Sources */,
 				04FA24182ACF0CF00061AED7 /* Score.swift in Sources */,
 				04FA23C62ACE97780061AED7 /* SearchViewController.swift in Sources */,
@@ -718,6 +756,7 @@
 				04FA24D92AD3D1480061AED7 /* BaseRequest.swift in Sources */,
 				04FA241C2ACFA8E10061AED7 /* AnimeResponse.swift in Sources */,
 				04FA24232ACFA93E0061AED7 /* ImageResponse.swift in Sources */,
+				04924AC52AD8E59C00BEC003 /* BottomSheetViewModel.swift in Sources */,
 				04FA23EC2ACEB7FB0061AED7 /* Endpoint.swift in Sources */,
 				04FA24B72AD3AACA0061AED7 /* Constant.swift in Sources */,
 				04FA24E92AD3E2000061AED7 /* UINavigationController+.swift in Sources */,
@@ -727,16 +766,21 @@
 				04266EDC2AD64B9B00488149 /* SeasonalViewModel.swift in Sources */,
 				04FA24202ACFA9190061AED7 /* StatisticsResponse.swift in Sources */,
 				04FA23C12ACE97620061AED7 /* SeasonalViewController.swift in Sources */,
+				04924ADA2AD9410300BEC003 /* FavoriteTableViewCell.swift in Sources */,
 				04266ED02AD5AB5F00488149 /* AnimeCollectionViewCell.swift in Sources */,
 				04FA23D62ACEAEC80061AED7 /* Strings+Generated.swift in Sources */,
+				04924AC82AD91B5200BEC003 /* FavoriteViewModel.swift in Sources */,
 				04FA246F2AD1A52E0061AED7 /* Bindable.swift in Sources */,
 				04FA23BC2ACE97300061AED7 /* FavoriteViewController.swift in Sources */,
 				04FA240D2ACF09420061AED7 /* BriefInfo.swift in Sources */,
 				04266F042AD6770F00488149 /* Filter.swift in Sources */,
 				04FA249B2AD38EAA0061AED7 /* AppUseCase.swift in Sources */,
 				04924AA32AD7CBCB00BEC003 /* DetailUseCase.swift in Sources */,
+				04924ACB2AD91C3100BEC003 /* FavoriteUseCase.swift in Sources */,
+				04924AB72AD7F34700BEC003 /* AnimeModel.xcdatamodeld in Sources */,
 				04FA24692AD19D100061AED7 /* HomeUseCase.swift in Sources */,
 				04FA23EF2ACEBB8D0061AED7 /* Anime.swift in Sources */,
+				04924AB22AD7EC8A00BEC003 /* CoreDataManager.swift in Sources */,
 				04266F252AD6A89E00488149 /* PresentationController.swift in Sources */,
 				04266ECB2AD5A57500488149 /* UIImage+.swift in Sources */,
 			);
@@ -934,6 +978,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04924AB52AD7F34700BEC003 /* AnimeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04924AB62AD7F34700BEC003 /* AnimeModel.xcdatamodel */,
+			);
+			currentVersion = 04924AB62AD7F34700BEC003 /* AnimeModel.xcdatamodel */;
+			path = AnimeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 04FA23582ACE4E380061AED7 /* Project object */;
 }

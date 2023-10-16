@@ -16,10 +16,13 @@ struct HomeNavigator: HomeNavigatorType {
 
     func openBottomSheet(anime: Anime) {
         let controller = HomeViewController()
+        let useCase = HomeUseCase()
+        let viewModel = BottomSheetViewModel(useCase: useCase, anime: anime)
         let bottomSheet = BottomSheetViewController().then {
             $0.modalPresentationStyle = .custom
             $0.selectionAnime = anime
             $0.transitioningDelegate = controller
+            $0.bindViewModel(to: viewModel)
         }
         navigationController.present(bottomSheet, animated: true, completion: nil)
     }

@@ -45,7 +45,7 @@ extension HomeViewModel: ViewModelType {
                 self.navigator.openBottomSheet(anime: anime)
             })
             .disposed(by: disposeBag)
-
+        
         return Output(animeList: anime, isLoading: indicator.asDriver())
     }
 }
