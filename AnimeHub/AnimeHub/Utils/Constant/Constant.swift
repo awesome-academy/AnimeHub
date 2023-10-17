@@ -36,5 +36,6 @@ struct Constant {
             dropped: 0,
             planToWatch: 0,
             total: 0)
+        static var defaultFilter = Filter.tv
     }
 }

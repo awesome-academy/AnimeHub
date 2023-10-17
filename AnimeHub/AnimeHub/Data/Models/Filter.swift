@@ -8,7 +8,6 @@
 import Foundation
 
 enum Filter: String, CaseIterable {
-    case all
     case tv
     case movie
     case ova
