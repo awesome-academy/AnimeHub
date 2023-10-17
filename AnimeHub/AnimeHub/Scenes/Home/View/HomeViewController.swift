@@ -16,6 +16,7 @@ final class HomeViewController: UIViewController, Bindable {
     var viewModel: HomeViewModel!
     private let disposeBag = DisposeBag()
     private var openSheetTrigger = PublishSubject<IndexPath>()
+    private var selectTrigger = PublishSubject<IndexPath>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,8 @@ final class HomeViewController: UIViewController, Bindable {
 
         let input = HomeViewModel.Input(
             load: loadTrigger,
-            openBottomSheet: openSheetTrigger.asDriver(onErrorJustReturn: IndexPath())
+            openBottomSheet: openSheetTrigger.asDriver(onErrorJustReturn: IndexPath()),
+            selectTrigger: selectTrigger.asDriver(onErrorJustReturn: IndexPath())
         )
 
         let output = viewModel.transform(input, disposeBag: disposeBag)
@@ -46,6 +48,9 @@ final class HomeViewController: UIViewController, Bindable {
                 cell.configCell(anime: element)
                 cell.addToFavorite = {
                     self.openSheetTrigger.onNext(IndexPath(row: row, section: 0))
+                }
+                cell.goDetail = {
+                    self.selectTrigger.onNext(IndexPath(row: row, section: 0))
                 }
                 return cell
             }

@@ -10,6 +10,8 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum StringGen {
+  /// Detail
+  internal static let detailTitle = StringGen.tr("Localizable", "detailTitle", fallback: "Detail")
   /// list.bullet
   internal static let favoriteIcon = StringGen.tr("Localizable", "favoriteIcon", fallback: "list.bullet")
   /// Favorite

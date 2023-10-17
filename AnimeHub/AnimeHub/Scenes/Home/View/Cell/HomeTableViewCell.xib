@@ -72,6 +72,7 @@
             <connections>
                 <outlet property="animeImageView" destination="opR-kP-nAT" id="vqu-B7-NwW"/>
                 <outlet property="animeLabel" destination="qfT-Ud-4cE" id="mtp-z8-EiS"/>
+                <outlet property="view" destination="H2p-sc-9uM" id="nKZ-aD-1JF"/>
             </connections>
             <point key="canvasLocation" x="-7.2463768115942031" y="126.5625"/>
         </tableViewCell>
