@@ -15,15 +15,17 @@ final class SeasonalViewController: UIViewController, Bindable {
     @IBOutlet private weak var animeCollectionView: UICollectionView!
 
     var viewModel: SeasonalViewModel!
-    private var selectionFilter = "tv" // TODO: test category
     private let disposeBag = DisposeBag()
     private var selectTrigger = PublishSubject<IndexPath>()
+    private var filterTrigger = BehaviorSubject(value: Constant.Object.defaultFilter.rawValue)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configView()
         animeCollectionView.delegate = self
+
+        changeFilter(filter: Constant.Object.defaultFilter)
     }
 
     private func configView() {
@@ -34,14 +36,14 @@ final class SeasonalViewController: UIViewController, Bindable {
 
     private func changeFilter(filter: Filter) {
         self.categoryButton.setTitle("\(filter.rawValue.capitalizeFirstLetter()) ▾", for: .normal)
-        selectionFilter = filter.rawValue
     }
 
     private func setupMenuButton() {
         let filterMenu = Filter.allCases.map { item in
-            return UIAction(title: item.rawValue.capitalized) { [weak self] _ in
-                    self?.changeFilter(filter: item)
-                }
+            return UIAction(title: item.rawValue.capitalized) { [unowned self] _ in
+                self.changeFilter(filter: item)
+                self.filterTrigger.onNext(item.rawValue)
+            }
         }
 
         categoryButton.do {
@@ -51,11 +53,8 @@ final class SeasonalViewController: UIViewController, Bindable {
     }
 
     func bindViewModel() {
-        let loadTrigger = Driver.just(())
-
         let input = SeasonalViewModel.Input(
-            load: loadTrigger,
-            filter: Driver.just(selectionFilter),
+            filter: filterTrigger.asDriver(onErrorJustReturn: Constant.String.empty),
             selectTrigger: selectTrigger.asDriver(onErrorJustReturn: IndexPath())
         )
 

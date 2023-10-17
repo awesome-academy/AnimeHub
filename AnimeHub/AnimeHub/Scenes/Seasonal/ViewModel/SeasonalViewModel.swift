@@ -18,7 +18,6 @@ struct SeasonalViewModel {
 
 extension SeasonalViewModel: ViewModelType {
     struct Input {
-        let load: Driver<Void>
         let filter: Driver<String>
         let selectTrigger: Driver<IndexPath>
     }
@@ -31,7 +30,7 @@ extension SeasonalViewModel: ViewModelType {
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let indicator = ActivityIndicator()
 
-        let result = input.load.withLatestFrom(input.filter)
+        let result = input.filter
             .map({ (filter) -> SeasonalRequest in
                 return SeasonalRequest(filter: filter)
             })
