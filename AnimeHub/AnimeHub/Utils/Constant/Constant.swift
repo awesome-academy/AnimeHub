@@ -37,5 +37,15 @@ struct Constant {
             planToWatch: 0,
             total: 0)
         static var defaultFilter = Filter.tv
+        static var defaultAnime = Anime(
+            malId: 0,
+            url: "",
+            images: ImageResponse(jpg: ImageURL(imageURL: "")),
+            title: "",
+            type: "",
+            source: "",
+            studios: [],
+            genres: []
+        )
     }
 }
