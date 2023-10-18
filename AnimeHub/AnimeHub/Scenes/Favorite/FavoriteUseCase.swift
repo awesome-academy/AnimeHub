@@ -11,6 +11,7 @@ import RxSwift
 protocol FavoriteUseCaseType {
     func fetchEntities() -> Observable<[AnimeEntity]>
     func deleteEntity(malId: Int) -> Observable<Void>
+    func getAnime(input: AnimeDetailRequest) -> Observable<Anime>
 }
 
 struct FavoriteUseCase: FavoriteUseCaseType {
@@ -23,5 +24,9 @@ struct FavoriteUseCase: FavoriteUseCaseType {
 
     func deleteEntity(malId: Int) -> Observable<Void> {
         return databaseManager.deleteFavourite(id: malId)
+    }
+
+    func getAnime(input: AnimeDetailRequest) -> Observable<Anime> {
+        return AnimeRepositoryImp().fetchAnime(input: input)
     }
 }

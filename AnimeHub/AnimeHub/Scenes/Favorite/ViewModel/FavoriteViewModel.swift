@@ -19,7 +19,7 @@ extension FavoriteViewModel: ViewModelType {
     struct Input {
         let loadTrigger: Driver<Void>
         let deleteTrigger: Driver<IndexPath>
-        let selectTrigger: Driver<IndexPath>
+        let selectTrigger: Driver<Int>
     }
 
     struct Output {
@@ -47,6 +47,17 @@ extension FavoriteViewModel: ViewModelType {
                     .asDriver(onErrorDriveWith: .empty())
             }.drive()
             .disposed(by: disposeBag)
+
+        input.selectTrigger
+                    .flatMapLatest { id in
+                        return self.useCase.getAnime(input: AnimeDetailRequest(id: id))
+                            .trackActivity(indicator)
+                            .asDriver(onErrorJustReturn: Constant.Object.defaultAnime)
+                    }
+                    .drive(onNext: { anime in
+                        self.navigator.goDetail(anime: anime)
+                    })
+                    .disposed(by: disposeBag)
 
         return Output(
             isLoading: indicator.asDriver(),

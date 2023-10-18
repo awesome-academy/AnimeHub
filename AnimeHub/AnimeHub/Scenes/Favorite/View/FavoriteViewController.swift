@@ -17,7 +17,7 @@ final class FavoriteViewController: UIViewController, Bindable {
     private let disposeBag = DisposeBag()
     private let loadTrigger = PublishSubject<Void>()
     private let deleteTrigger = PublishSubject<IndexPath>()
-    private let selectTrigger = PublishSubject<IndexPath>()
+    private let selectTrigger = PublishSubject<Int>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,9 @@ final class FavoriteViewController: UIViewController, Bindable {
                 let indexPath = IndexPath(row: row, section: 0)
                 let cell: FavoriteTableViewCell = table.dequeueReusableCell(for: indexPath)
                 cell.configCell(anime: element)
+                cell.goDetail = {
+                    self.selectTrigger.onNext(Int(element.id))
+                }
 
                 return cell
             }
